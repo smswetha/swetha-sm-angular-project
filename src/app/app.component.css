@@ -1,13 +1,13 @@
 .header {
-  background-color: rgb(36, 206, 206);
+  background-color: rgb(255, 255, 255);
   margin-top: -8px;
   margin-left: -16px;
   margin-right: -16px;
   padding: 20px;
   display: flex;
 }
-.bar{
-  background-color: rgb(243, 239, 239);
+.bar {
+  background-color: rgb(255, 253, 253);
 }
 .sample {
   flex: 1 1 auto;
@@ -21,33 +21,59 @@
   margin-left: 20px;
 }
 .menu-icon {
-  background-color:rgb(240, 233, 233);
+  background-color: rgb(255, 255, 255);
   color: black;
   border: none;
   font-size: 40px;
   cursor: pointer;
 }
-.favorite-icon{
-  background-color:rgb(238, 230, 230);
+.favorite-icon {
+  background-color: rgb(255, 255, 255);
   color: black;
   border: none;
   font-size: 40px;
   cursor: pointer;
+  transition: transform 0.2s;
+}
 
+.favorite-icon:hover {
+  background-color: rgb(255, 255, 255);
+  color: red;
+  transform: scale(1.5);
+  border: none;
+  font-size: 40px;
+  cursor: pointer;
 }
-.share-icon{
-  background-color:rgb(243, 237, 237);
+.share-icon {
+  background-color: rgb(255, 255, 255);
   color: black;
   border: none;
   font-size: 40px;
   cursor: pointer;
 }
-.product-link{
-  background-color:rgb(240, 232, 232);
-  border:3px;
+
+.share-icon:hover {
+  background-color: rgb(255, 255, 255);
+  color: black;
+  border: none;
+  font-size: 40px;
+  transform: scale(1.5);
+  cursor: pointer;
+}
+
+.product-link {
+  background-color: rgb(255, 255, 255);
+  border: 3px;
   font-size: larger;
   margin-right: 20px;
   cursor: pointer;
-  padding: 13px;
-  
+  transition: transform 0.2s;
+  /* padding: 13px; */
+}
+
+.product-link:hover {
+  text-decoration: underline;
+  font-weight: 700;
+  transform: scale(1.2);
+  background-color: rgb(255, 255, 255);
 }
