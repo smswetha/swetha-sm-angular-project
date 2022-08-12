@@ -8,6 +8,9 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatCardModule } from '@angular/material/card';
 import { MatGridListModule } from '@angular/material/grid-list';
 import { HttpClientModule } from '@angular/common/http';
+import { Routes } from '@angular/router';
+
+// const appRoutes:Routes = [{path: 'details' component: DetailComponent},]
 
 @NgModule({
   declarations: [AppComponent, ProductComponent],
@@ -23,4 +26,7 @@ import { HttpClientModule } from '@angular/common/http';
   providers: [],
   bootstrap: [AppComponent],
 })
+
+
+
 export class AppModule {}

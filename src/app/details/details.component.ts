@@ -1,14 +1,15 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+import { Product } from '../product/product';
 import { DataService } from '../service/Dataproduct.service';
-import { Product } from './product';
-import {ActivatedRoute,Router} from '@angular/router';
-@Component({
-  selector: 'app-product',
-  templateUrl: './product.component.html',
-  styleUrls: ['./product.component.css'],
-})
 
-export class ProductComponent implements OnInit {
+
+@Component({
+  selector: 'app-details',
+  templateUrl: './details.component.html',
+  styleUrls: ['./details.component.css']
+})
+export class DetailsComponent implements OnInit {
   products: Array<Product> = [];
   constructor(public product: DataService,private router: Router) {}
   automatic(){
@@ -21,5 +22,5 @@ export class ProductComponent implements OnInit {
       console.log(data);
     });
   }
+  
 }
-
